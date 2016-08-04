@@ -1,0 +1,22 @@
+.sidebar-holder{
+    background-color: #f0f0f0;
+    position:fixed;
+    left: 0px;
+    top: 60px;
+    border :1px solid black;
+}
+.sidebar-holder>li{
+    list-style:none;
+}
+.sidebar-display{
+    left:25%;
+    top:60px;
+    background-color: yellow;
+}
+.title{
+    position: fixed;
+    background-color: aqua;
+    z-index : 100;
+    margin:0px;
+    padding:10px;
+}
