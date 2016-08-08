@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link data-require="bootstrap@3.3.5" data-semver="3.3.5" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body ng-controller="appCtrl">
+    <div class="container-fluid">
+        <div class="title-bar">
+            <img class='icon' src="../app/resources/images/logo.png"  />
+            <div class="title">
+                <p class="title-name">K Kart</p>
+                <p class="title-description">Product Display Test</p>
+            </div>
+        </div>
+        <sidebar-menu class="sidebar-menu-area">
+            <sidebar-item label="electronics" category="Electronics"></sidebar-item>
+            <sidebar-item label="phones" category="Mobile Phones" ></sidebar-item>
+            <sidebar-item label="laptops" category="Laptops"></sidebar-item>
+            <sidebar-item label="cellphones" category="Cell Phones"></sidebar-item>
+        </sidebar-menu>
+        <products-view>
+
+        </products-view>
+    </div>
+<script data-require="jquery@2.2.0" data-semver="2.2.0" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="../node_modules/angular/angular.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+<script src="controllers/appCtrl.js"></script>
+<script src="directives/sidebarMenu.js"></script>
+<script src="directives/sidebarItem.js"></script>
+<script src="directives/productsView.js"></script>
+<script src="services/dataService.js"></script>
+</body>
+
+</html>
